@@ -7,12 +7,12 @@ require 'yui/compressor'
 class RakeAssets
   def initialize(settings = {})
     @settings = {
-      env:          Sprockets::Environment.new(File.dirname(__FILE__)) { |env| env.logger = Logger.new(STDOUT) },
-      root:         File.dirname(__FILE__),
+      env:          Sprockets::Environment.new(Dir.pwd) { |env| env.logger = Logger.new(STDOUT) },
+      root:         Dir.pwd,
       js_path:      'app/assets/scripts',
-      js_compiled:  File.dirname(__FILE__) + '/public/scripts/application.js',
+      js_compiled:  "#{Dir.pwd}/public/scripts/application.js",
       css_path:     'app/assets/styles',
-      css_compiled: File.dirname(__FILE__) + '/public/css/style.css',
+      css_compiled: "#{Dir.pwd}/public/css/style.css",
       # Uglifier Config - https://github.com/lautis/uglifier
       uglifier:     { mangle: true }, 
       # Ruby-YUI Compressor Config - https://github.com/sstephenson/ruby-yui-compressor
@@ -26,7 +26,7 @@ class RakeAssets
     end
 
     unless File.directory? File.join(@settings[:root], @settings[:js_path])
-      raise "Javascript path (#{@settings[:css_path]}) was not found."
+      raise "Javascript path (#{@settings[:js_path]}) was not found."
     end
 
     unless File.directory? File.dirname(@settings[:js_compiled])
