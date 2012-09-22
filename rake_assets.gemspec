@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rake_assets/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = 'rake_assets'
+  gem.name          = 'rake-assets'
   gem.date          = '2012-09-22'
   gem.version       = RakeAssets::VERSION
   gem.authors       = ['Nick Barth']
