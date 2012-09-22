@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rake_assets (0.0.1)
+    rake-assets (0.0.1)
       coffee-script
       rake
       sass
@@ -53,5 +53,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rake_assets!
+  rake-assets!
   rspec
