@@ -16,6 +16,7 @@ describe RakeAssets do
   context 'on javascript compile' do
     it 'it calls sprockets correctly' do
       @writer.should_receive(:write_to).with('JS_COMPILED_PATH')
+      @sprockets.should_receive(:clear_paths).once
       @sprockets.should_receive(:append_path).with('JS_PATH')
       @sprockets.should_receive(:find_asset).with('application').and_return(@writer)
 
@@ -29,6 +30,7 @@ describe RakeAssets do
   context 'on css compile' do
     it 'it calls sprockets correctly' do
       @writer.should_receive(:write_to).with('CSS_COMPILED_PATH')
+      @sprockets.should_receive(:clear_paths).once
       @sprockets.should_receive(:append_path).with('CSS_PATH')
       @sprockets.should_receive(:find_asset).with('application').and_return(@writer)
 

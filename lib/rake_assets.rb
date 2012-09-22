@@ -43,12 +43,14 @@ class RakeAssets
   end
   
   def compile_js
+    @settings[:env].clear_paths
     @settings[:env].js_compressor = Uglifier.new(@settings[:uglifier])
     @settings[:env].append_path(@settings[:js_path])
     @settings[:env].find_asset('application').write_to(@settings[:js_compiled])
   end
 
   def compile_css
+    @settings[:env].clear_paths
     @settings[:env].css_compressor = YUI::CssCompressor.new(@settings[:yuicomp])
     @settings[:env].append_path(@settings[:css_path])
     @settings[:env].find_asset('application').write_to(@settings[:css_compiled])
