@@ -28,4 +28,4 @@ To configure them just initialize a new instance of RakeAssets to override the d
                                   css_compiled: "#{Dir.pwd}/public/css/style.css",           # Path to compile CSS too
 
 ### License
-MIT &copy; 2012 Nick Barth
+WTFPL &copy; 2012 Nick Barth
