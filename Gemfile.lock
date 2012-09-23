@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rake-assets (0.0.1)
+    rake-assets (1.0.0)
       coffee-script
       rake
       sass
