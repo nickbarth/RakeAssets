@@ -16,7 +16,7 @@ Now you will have some rake tasks to compress and minify your CSS and Javascript
     rake -T
 
     rake assets:compile       # Compiles both CSS and Javascript
-    rake assets:check         # Checks the configuration paths for RakeAssets are valid
+    rake assets:check         # Checks that the configuration paths are valid
     rake assets:compile_js    # Compiles Javascript files into a single minified Javascript file
     rake assets:compile_css   # Compiles CSS files into a single minified CSS file
 
