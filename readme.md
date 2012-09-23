@@ -22,10 +22,10 @@ Now you will have some rake tasks to compress and minify your CSS and Javascript
 
 To configure them just initialize a new instance of RakeAssets to override the default paths.
 
-      @rake_assets = RakeAssets.new js_path:      'app/assets/scripts',                        # Location of application.js
-                                    js_compiled:  "#{Dir.pwd}/public/scripts/application.js",  # Path to compile JS too
-                                    css_path:     'app/assets/styles',                         # Path of application.css file
-                                    css_compiled: "#{Dir.pwd}/public/css/style.css",           # Path to compile CSS too
+    @rake_assets = RakeAssets.new js_path:      'app/assets/scripts',                        # Location of application.js
+                                  js_compiled:  "#{Dir.pwd}/public/scripts/application.js",  # Path to compile JS too
+                                  css_path:     'app/assets/styles',                         # Path of application.css file
+                                  css_compiled: "#{Dir.pwd}/public/css/style.css",           # Path to compile CSS too
 
 ### License
 MIT &copy; 2012 Nick Barth
