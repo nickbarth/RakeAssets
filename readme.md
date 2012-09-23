@@ -20,7 +20,7 @@ Now you will have some rake tasks to compress and minify your CSS and Javascript
     rake assets:compile_js    # Compiles Javascript files into a single minified Javascript file
     rake assets:compile_css   # Compiles CSS files into a single minified CSS file
 
-To configure them just initialize a new instance of RakeAssets to override the default paths.
+To configure them just initialize a new instance of RakeAssets to override the default paths in your `Rakefile`.
 
     @rake_assets = RakeAssets.new js_path:      'app/assets/scripts',                        # Location of application.js
                                   js_compiled:  "#{Dir.pwd}/public/scripts/application.js",  # Path to compile JS too
