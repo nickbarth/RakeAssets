@@ -9,10 +9,10 @@ class RakeAssets
     @settings = {
       env:          Sprockets::Environment.new(Dir.pwd) { |env| env.logger = Logger.new(STDOUT) },
       root:         Dir.pwd,
-      js_path:      'app/assets/scripts',
-      js_compiled:  "#{Dir.pwd}/public/scripts/application.js",
-      css_path:     'app/assets/styles',
-      css_compiled: "#{Dir.pwd}/public/css/style.css",
+      js_path:      'app/assets/javascripts',
+      js_compiled:  "#{Dir.pwd}/public/assets/javascripts/application.js",
+      css_path:     'app/assets/stylesheets',
+      css_compiled: "#{Dir.pwd}/public/assets/stylesheets/application.css",
       # Uglifier Config - https://github.com/lautis/uglifier
       uglifier:     { mangle: true }, 
       # Ruby-YUI Compressor Config - https://github.com/sstephenson/ruby-yui-compressor
