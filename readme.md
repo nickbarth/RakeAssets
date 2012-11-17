@@ -1,4 +1,5 @@
-# RakeAssets
+# RakeAssets [![Build Status](https://secure.travis-ci.org/nickbarth/RakeAssets.png?branch=master)](https://travis-ci.org/nickbarth/RakeAssets)
+
 RakeAssets is a small Ruby Gem that contains some simple configurable Rake Tasks and dependancies for making compiling assets using Sprockets faster and easier.
 
 # How To Use
